@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harini G — Data Analyst &amp; CSE Student</title>
+<meta name="description" content="Portfolio of Harini G, final-year B.E. Computer Science Engineering student and aspiring Data Analyst.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Skip link for accessibility ===== -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ===== Navigation ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Harini<span class="dot">G</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#activities" class="nav-link">Co-Curricular Activities</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <canvas id="graphCanvas"></canvas>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">Trichy, Tamil Nadu</p>
+        <h1 class="hero-title">Hi, I'm Harini G</h1>
+        <p class="hero-role">Final-Year B.E. Computer Science Engineering Student</p>
+        <p class="hero-typing"><span id="typingText"></span><span class="cursor" aria-hidden="true">|</span></p>
+
+        <p class="hero-intro">
+          Motivated and enthusiastic final-year B.E Computer Science student seeking an
+          entry-level opportunity in the IT industry. I have basic knowledge of Python
+          programming and a strong interest in data analytics and technology.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="#" class="btn btn-ghost" id="downloadResume" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb-wrap" id="orbWrap">
+          <!-- Three.js canvas injected here -->
+          <div class="orb-fallback" id="orbFallback" hidden>
+            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="profile-frame">
+          <img src="images/WhatsApp Image .jpg"
+               alt="Portrait placeholder for Harini G" loading="lazy" class="profile-img">
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+ <section id="about" class="section">  
+  <div class="section-inner">  
+  
+    <h2 class="section-title">About Me</h2>  
+  
+    <div class="about-grid">  
+      <div>  
+        <p class="about-text">  
+          I am pursuing my B.E. in Computer Science Engineering,  
+          with an interest in Data Analytics and Technology.  
+        </p>  
+  
+        <p class="about-text">  
+          I am interested in developing my technical skills and  
+          building practical projects using programming and  
+          data analytics tools.  
+        </p>  
+      </div>  
+  
+      <div class="stat-cards">  
+  
+        <div class="stat-card">  
+          <span class="stat-value">CSE</span>  
+          <span class="stat-label">Computer Science Engineering</span>  
+        </div>  
+  
+        <div class="stat-card">  
+          <span class="stat-value">2027</span>  
+          <span class="stat-label">Expected Graduation</span>  
+        </div>  
+  
+      </div>  
+    </div>  
+  
+  </div>  
+</section>
+  <!-- ===== Skills ===== -->
+  <!-- SKILLS SECTION -->
+<section id="skills" class="section section-alt">
+  <div class="section-inner">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <!-- Programming -->
+      <div>
+        <h3 class="skill-group-title">Programming</h3>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-java"></i>
+            <span>Java</span>
+            <span class="skill-tag">Intermediate</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+            <span class="skill-tag">Intermediate</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data & Database -->
+      <div>
+        <h3 class="skill-group-title">Data & Database</h3>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-database"></i>
+            <span>SQL</span>
+            <span class="skill-tag">basic</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 45%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>Power BI</span>
+            <span class="skill-tag">basic</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 55%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div>
+        <h3 class="skill-group-title">Tools & Technologies</h3>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML & CSS</span>
+            <span class="skill-tag">basic</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 40%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+            <span class="skill-tag">Basic</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Soft Skills -->
+    <h3 class="subsection-title">Soft Skills</h3>
+
+    <div class="soft-skills-grid">
+
+      <div class="soft-card">
+        <i class="fa-solid fa-comments"></i>
+        <span>Communication</span>
+      </div>
+
+      <div class="soft-card">
+        <i class="fa-solid fa-people-group"></i>
+        <span>Teamwork</span>
+      </div>
+
+      <div class="soft-card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <span>Problem Solving</span>
+      </div>
+
+      <div class="soft-card">
+        <i class="fa-solid fa-arrows-rotate"></i>
+        <span>Adaptability</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===== Projects ===== -->
+ <section id="projects" class="section">
+  <div class="section-inner">
+
+<h2 class="section-title">Projects</h2>
+
+<!-- Project 1 -->
+<div class="project-card">
+
+  <div class="project-visual">
+    <svg class="project-svg" viewBox="0 0 240 180" fill="none">
+      <line class="p-edge" x1="40" y1="90" x2="120" y2="45"/>
+      <line class="p-edge" x1="40" y1="90" x2="120" y2="135"/>
+      <line class="p-edge" x1="120" y1="45" x2="200" y2="90"/>
+      <line class="p-edge" x1="120" y1="135" x2="200" y2="90"/>
+
+      <circle class="p-node" cx="40" cy="90" r="14"/>
+      <circle class="p-node-main" cx="120" cy="45" r="18"/>
+      <circle class="p-node-main" cx="120" cy="135" r="18"/>
+      <circle class="p-node" cx="200" cy="90" r="14"/>
+    </svg>
+  </div>
+
+  <div class="project-content">
+
+    <div class="project-head">
+      <i class="fa-solid fa-ticket project-icon"></i>
+
+      <div>
+        <h3>Streamlining Ticket Assignment for Efficient Support Operations</h3>
+        <p class="project-role">Naan Mudhalvan – ServiceNow Project</p>
+      </div>
+    </div>
+
+    <p class="project-desc">
+      A ServiceNow-based project designed to improve support operations
+      by streamlining ticket assignment and helping support teams manage
+      service requests efficiently.
+    </p>
+
+    <ul class="project-list">
+      <li>Ticket management</li>
+      <li>Automated assignment</li>
+      <li>Support workflow</li>
+      <li>ServiceNow platform</li>
+    </ul>
+
+    <div class="tag-row">
+      <span class="tag">ServiceNow</span>
+      <span class="tag">ITSM</span>
+      <span class="tag">Workflow</span>
+      <span class="tag">JavaScript</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+
+  <!-- ===== Certifications ===== -->
+
+<section id="certifications" style="
+    padding: 100px 20px;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+">
+
+    <h2 style="
+        font-size: 40px;
+        color: #38bdf8;
+        margin-bottom: 50px;
+    ">
+        Certifications
+    </h2>
+
+    <div style="
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    ">
+
+        <div style="
+            width: 280px;
+            padding: 25px;
+            background: #1e293b;
+            border: 1px solid #38bdf8;
+            border-radius: 15px;
+        ">
+            <div style="font-size: 35px;">🏆</div>
+            <h3>AI Tools & Claude Workshop</h3>
+            <p>Be10X</p>
+        </div>
+
+        <div style="
+            width: 280px;
+            padding: 25px;
+            background: #1e293b;
+            border: 1px solid #38bdf8;
+            border-radius: 15px;
+        ">
+            <div style="font-size: 35px;">🏆</div>
+            <h3>AI & ML Webinar</h3>
+            <p>Revamp Academy</p>
+        </div>
+        <div style="
+    width: 280px;
+    padding: 25px;
+    background: #1e293b;
+    border: 1px solid #38bdf8;
+    border-radius: 15px;
+    text-align: center;
+">
+
+    <div style="font-size: 35px; margin-bottom: 12px;">
+        🏆
+    </div>
+
+    <h3 style="color:  #cbd5e1;">
+        TCS iON Digital Learning
+    </h3>
+
+    <p style="color: #cbd5e1;">
+        IT Industry Overview &amp; Career Development
+    </p>
+
+</div>
+
+    </div>
+
+</section>
+<!-- ===== Co-Curricular Activities ===== -->
+<section id="activities" style="
+    padding: 80px 20px;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+">
+
+    <h2 style="
+        font-size: 40px;
+        color: #38bdf8;
+        margin-bottom: 40px;
+    ">
+        Co-Curricular Activities
+    </h2>
+
+    <div style="
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    ">
+
+        <div style="
+            padding: 25px;
+            background: #1e293b;
+            border: 1px solid #38bdf8;
+            border-radius: 15px;
+            text-align: left;
+        ">
+            <h3>TECH INNOVA 26</h3>
+            <p>Bug Bounty</p>
+        </div>
+
+        <div style="
+            padding: 25px;
+            background: #1e293b;
+            border: 1px solid #38bdf8;
+            border-radius: 15px;
+            text-align: left;
+        ">
+            <h3>NEXORA 26</h3>
+            <p>Participated in National Level Technical Symposium</p>
+        </div>
+
+    </div>
+
+</section>
+  <!-- ===== Education ===== -->
+ <!-- ===== Education ===== -->
+<section id="education" style="
+    padding: 100px 20px;
+    background: #111827;
+    color: white;
+    text-align: center;
+">
+
+    <h2 style="
+        font-size: 40px;
+        color: #38bdf8;
+        margin-bottom: 50px;
+    ">
+        Education
+    </h2>
+
+    <div style="
+        max-width: 750px;
+        margin: auto;
+        text-align: left;
+    ">
+
+        <!-- B.E CSE -->
+        <div style="
+            padding: 30px;
+            margin-bottom: 25px;
+            background: #1e293b;
+            border-left: 4px solid #38bdf8;
+            border-radius: 12px;
+        ">
+
+            <h3 style="
+                font-size: 24px;
+                margin-bottom: 10px;
+            ">
+                Oxford Engineering College
+            </h3>
+
+            <p style="
+                color: #38bdf8;
+                font-size: 18px;
+                margin-bottom: 10px;
+            ">
+                2023 – 2027
+            </p>
+
+            <p style="font-size: 17px;">
+                B.E. Computer Science Engineering
+            </p>
+
+            <p style="font-size: 17px;">
+                CGPA: 8.3
+            </p>
+
+        </div>
+
+
+        <!-- HSC -->
+        <div style="
+            padding: 30px;
+            background: #1e293b;
+            border-left: 4px solid #38bdf8;
+            border-radius: 12px;
+        ">
+
+            <h3 style="
+                font-size: 24px;
+                margin-bottom: 10px;
+            ">
+                Higher Secondary Certificate (HSC)
+            </h3>
+
+            <p style="
+                color: #38bdf8;
+                font-size: 18px;
+            ">
+                75% — 2023
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+  <!-- ===== Contact ===== -->
+<section id="contact" style="
+    padding: 90px 20px;
+    background: #0f172a;
+    color: white;
+">
+
+    <div style="
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+    ">
+
+        <h2 style="
+            font-size: 38px;
+            color: #38bdf8;
+            margin-bottom: 12px;
+        ">
+            Contact Me
+        </h2>
+
+        <p style="
+            color: #94a3b8;
+            font-size: 16px;
+            margin-bottom: 45px;
+        ">
+            Feel free to get in touch with me
+        </p>
+
+
+        <!-- Contact Cards -->
+        <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        ">
+
+            <!-- Location -->
+            <div style="
+                padding: 28px 20px;
+                background: #1e293b;
+                border: 1px solid #334155;
+                border-radius: 16px;
+            ">
+                <div style="
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                ">
+                    📍
+                </div>
+
+                <h3 style="margin: 8px 0; color: #38bdf8;">
+                    Location
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    color: #cbd5e1;
+                ">
+                    Trichy
+                </p>
+            </div>
+
+
+            <!-- Phone -->
+            <div style="
+                padding: 28px 20px;
+                background: #1e293b;
+                border: 1px solid #334155;
+                border-radius: 16px;
+            ">
+                <div style="
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                ">
+                    📞
+                </div>
+
+                <h3 style="margin: 8px 0; color: #38bdf8;">
+                    Phone
+                </h3>
+
+                <a href="tel:9976103813"
+                   style="
+                       color: #cbd5e1;
+                       text-decoration: none;
+                   ">
+                    9976103813
+                </a>
+            </div>
+
+
+            <!-- Email -->
+            <div style="
+                padding: 28px 20px;
+                background: #1e293b;
+                border: 1px solid #334155;
+                border-radius: 16px;
+            ">
+                <div style="
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                ">
+                    ✉️
+                </div>
+
+                <h3 style="margin: 8px 0; color: #38bdf8;">
+                    Email
+                </h3>
+
+                <a href="mailto:hariniganesan2111@gmail.com"
+                   style="
+                       color: #cbd5e1;
+                       text-decoration: none;
+                       word-break: break-word;
+                   ">
+                    hariniganesan2111@gmail.com
+                </a>
+            </div>
+
+
+            <!-- LinkedIn -->
+            <div style="
+                padding: 28px 20px;
+                background: #1e293b;
+                border: 1px solid #334155;
+                border-radius: 16px;
+            ">
+                <div style="
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                ">
+                    💼
+                </div>
+
+                <h3 style="margin: 8px 0; color: #38bdf8;">
+                    LinkedIn
+                </h3>
+
+                <a href="https://www.linkedin.com/in/harini-ganesan-107113386"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="
+                       color: #cbd5e1;
+                       text-decoration: none;
+                   ">
+                    View Profile
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <p>&copy; 2026 Harini G. All Rights Reserved.</p>
+  <p class="footer-sub">Designed &amp; Developed with HTML, CSS &amp; JavaScript</p>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
